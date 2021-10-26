@@ -12,12 +12,10 @@ $name.textContent = 'Richard N'
 //                        <img id='picture' src="https://picsum.photos/300/300?random=1">
 //                        <p id='picText'></p> </div>`
 
-$picture.addEventListener('click', function (e){
-console.log('clicked')
-$picture.innerHTML += 'click'
+$picture.addEventListener('click', function (event){
+$picText.innerHTML = 'This is an image'
 })
 
 for (let picNumber = 0; picNumber < 12; picNumber++) {
-$picture.innerHTML += picNumber
 
 }
