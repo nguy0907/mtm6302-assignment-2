@@ -19,12 +19,9 @@ $container.addEventListener('dblclick', function (){
     $picText.innerHTML = 'Click the Image'
     })
 
-for (let picNumber = 0; picNumber < 12; picNumber++) {
-    // $imageContainer.innerHTML += `<div id='imageContainer'>
-    // <img id='picture' src="https://picsum.photos/300/300?random=1">
-    // <p id='picText'>Click the Image</p> </div>`
+for (let picNumber = 0; picNumber < 11; picNumber++) {
+    $imageContainer.innerHTML += `<div id='imageContainer'>
+    <img id='picture' src="https://picsum.photos/300/300?random=1">
+    </div>`
 }
 
-if ($imageContainer==='click'){
-    $picText.innerHTML = 'This is an image'   
-}

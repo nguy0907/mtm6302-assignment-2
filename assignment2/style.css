@@ -52,6 +52,7 @@ table {
 html{
 	font-family: 'Secular One', sans-serif;
 	text-align: center;
+	margin: auto;
 	margin-top:3rem;
 }
 
@@ -66,5 +67,20 @@ h2{
 }
 
 #imageContainer, #picture{
+justify-content: center;
 	margin-bottom:1rem;
 }
+
+@media screen and (min-width:700px) {
+#imageContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}	
+}
+
+@media screen and (min-width:1400px) {
+	#imageContainer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}	
+	}
