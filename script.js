@@ -40,7 +40,8 @@ const img = [
 ]
 $container.innerHTML = img
 $picture.addEventListener('click', function (){
-
+    img.innerHTML = 'hi'
+    console.log(img)
 })
 
 
