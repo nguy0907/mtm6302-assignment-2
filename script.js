@@ -22,20 +22,20 @@ const $picture = document.getElementById('picture')
 //     'Image 12'
 // ]
 
-const img = [
-    `<img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <img id='picture' src="https://picsum.photos/300/300?random=1">`
-]
+// const img = [
+//     `<img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">`
+// ]
 
 
 
@@ -68,7 +68,7 @@ const $imgdisplay = document.querySelectorAll('.picture')
 // loop version
 
 
-for (let picNumber = 0; picNumber < 12; picNumber++) {
+for (let picNumber = 0; picNumber < 11; picNumber++) {
     $imageContainer.innerHTML += 
    `<div id='imageContainer'>
     <img id='picture' src="https://picsum.photos/300/300?random=1">
@@ -78,13 +78,14 @@ for (let picNumber = 0; picNumber < 12; picNumber++) {
 }
 
 $imageContainer.addEventListener('click', function (event){
-    $imageContainer.children[4].setAttribute('style', `background-color:red;
+    $imageContainer.children[3].setAttribute('style', `background-color:red;
     `)
    console.log(event)
 
    $imageContainer.addEventListener('mouseover', function (event){
     $imageContainer.children[4].setAttribute('style', `background-color:green;
     `) 
+    console.log(event)
    }) 
 //     if (e.target.contains('pictures')){
 //  $imageContainer.innerHTML = 'hi'
