@@ -2,18 +2,12 @@ const $title = document.getElementById('title')
 const $name = document.getElementById('name')
 const $container = document.getElementById('container')
 const $imageContainer = document.getElementById('imageContainer')
-const $picText = document.getElementById('picText')
-const $element = document.getElementById('element')
-const $picture = document.getElementById('picture')
 const $popuptext = document.getElementById('popuptext')
+const $picture = document.getElementById('picture')
 
-// const $allPictures = document.querySelector('picture')
 
 
-$title.textContent = 'Image Gallery'
-$name.textContent = 'Richard N'
-
-const imgArray = [
+const imgLabel = [
     'Image 1',
     'Image 2',
     'Image 3',
@@ -28,34 +22,71 @@ const imgArray = [
     'Image 12'
 ]
 
-const img = [
-    `<img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[0]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[1]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[2]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[3]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[4]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[5]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[6]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[7]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[8]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[9]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[10]}>
-    <img id='picture' src="https://picsum.photos/300/300?random=1" ${imgArray[11]}>`
-]
-$imageContainer.innerHTML = img
-$imageContainer.addEventListener('click', function (){
-    $popuptext.textContent = 'hi'
-    console.log(img)
-})
+// const img = [
+//     `<img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">
+//     <img id='picture' src="https://picsum.photos/300/300?random=1">`
+// ]
 
+const img = []
+
+$title.textContent = 'Image Gallery'
+$name.textContent = 'Richard N'
+
+
+const $imgdisplay = document.querySelectorAll('.picture')
+
+// for (const $picture of $imglist){
+
+
+// for (let picNumber = 0; picNumber < 11; picNumber++) {
+// img.push(`<div id='imageContainer'>
+// <img id='picture' src='https://picsum.photos/300/300?random=1'>
+// <p id='popuptext'><span> Click </span></p>
+// </div>`)
+//     $imageContainer.addEventListener('click', function (event){
+//     $imageContainer.innerHTML = ` ${imgLabel}`
+//   console.log(event)
+
+// })
+   
+// }
+
+// }
+
+
+
+
+
+
+
+// loop version
 
 
 for (let picNumber = 0; picNumber < 11; picNumber++) {
-    // $imageContainer.innerHTML += `<div id='imageContainer'>
-    // <img id='picture' src="https://picsum.photos/300/300?random=1">
-    // </div>`
+    $imageContainer.innerHTML += 
+   `<div id='imageContainer'>
+    <img id='picture' src="https://picsum.photos/300/300?random=1">
+    <p id='popuptext'><span>  </span></p>
+    </div>`
 
-   
 }
 
+$imageContainer.addEventListener('click', function (event){
+    $imageContainer.children[7].textContent = 'This is an image'
+   console.log(event)
+//     if (e.target.contains('pictures')){
+//  $imageContainer.innerHTML = 'hi'
+//     }
+   
+})
 
