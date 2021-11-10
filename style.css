@@ -70,7 +70,10 @@ header{
 	margin-bottom:5rem;
 }
 
-
+.effect{
+	background-color:#D8E2DC;
+	 padding-top:3em;
+}
 
 #container, .picture{
 justify-content: center;

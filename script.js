@@ -10,8 +10,8 @@ $title.textContent = 'Image Gallery'
 $name.textContent = 'Richard N'
 
 // Code
-const imageContainer = `<div id='imageContainer'>
- <img class='picture' src="https://picsum.photos/300/300?random=1">
+const container = `<div id='imageContainer'>
+ <img class='picture' src="https://dummyimage.com/300.png/09f/fff">
  <p id='caption'> <p>
  </div>`
 
