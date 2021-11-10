@@ -66,11 +66,20 @@ h2{
 	margin-bottom:1rem;
 }
 
+header{
+	margin-bottom:5rem;
+}
+
+
+
 #container, .picture{
 justify-content: center;
 	margin-bottom:3rem;
 }
 
+/* #imageContainer{
+	background-color: green;
+} */
 
 footer{
 	margin-bottom:2rem;

@@ -1,100 +1,51 @@
+
+//data
+const $container = document.getElementById('container')
 const $title = document.getElementById('title')
 const $name = document.getElementById('name')
-const $container = document.getElementById('container')
-const $imageContainer = document.getElementById('imageContainer')
-const $popuptext = document.getElementById('popuptext')
-const $picture = document.getElementById('picture')
-
-
-
-// const imgLabel = [
-//     'Image 1',
-//     'Image 2',
-//     'Image 3',
-//     'Image 4',
-//     'Image 5',
-//     'Image 6',
-//     'Image 7',
-//     'Image 8',
-//     'Image 9',
-//     'Image 10',
-//     'Image 11',
-//     'Image 12'
-// ]
-
-// const img = [
-//     `<img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">
-//     <img id='picture' src="https://picsum.photos/300/300?random=1">`
-// ]
-
-// $imageContainer.innerHTML = img
-
-// for (const $imagedisplay of img)
+// const $imageContainer = document.getElementById('imageContainer')
 
 $title.textContent = 'Image Gallery'
 $name.textContent = 'Richard N'
 
+// Code
+const imageContainer = `<div id='imageContainer'>
+ <img class='picture' src="https://picsum.photos/300/300?random=1">
+ <p id='label'> Image 1 </p>
+ </div>
+ <div id='imageContainer'>
+ <img class='picture' src="https://picsum.photos/300/300?random=1">
+ <p id='label'> Image 2 </p>
+ </div>
+ <div id='imageContainer'>
+ <img class='picture' src="https://picsum.photos/300/300?random=1">
+ <p id='label'> Image 3 </p>
+ </div>
+ <div id='imageContainer'>
+ <img class='picture' src="https://picsum.photos/300/300?random=1">
+ <p id='label'> Image 4 </p>
+ </div>
+ <div id='imageContainer'>
+ <img class='picture' src="https://picsum.photos/300/300?random=1">
+ <p id='label'> Image 5 </p>
+ </div>`
 
-const $imgdisplay = document.querySelectorAll('.picture');
+// const $picture = document.getElementsByClassName('picture')
+// const selectimage = $container.children
+ $container.insertAdjacentHTML('beforeend', imageContainer)
 
+$container.parentElement.children[1].addEventListener('click', function (event){
+  $container.parentElement.children[1].setAttribute('style', 
+  `background-color:#D8E2DC; padding-top:3em;`)
 
+  console.log(event.target.parentElement.children[1])
+ })
 
-// for (const $picture of $imgdisplay){
-
-// }
-// for (let picNumber = 0; picNumber < 12; picNumber++) {
-//     $imageContainer.innerHTML = (`<div id='imageContainer'>
-// <img id='picture' src='https://picsum.photos/300/300?random=1'>
-// </div>`)
  
-  
-// }
-
-//    $imageContainer.addEventListener('click', function (event){
-//     // $imageContainer.innerHTML = ` ${imgLabel}`
-//     $picture.setAttribute('style', `background-color:red;`)
-//   console.log(event)
-
-// })
-
-// loop version
 
 
-for (let picNumber = 0; picNumber < 11; picNumber++) {
-    $imageContainer.innerHTML += 
-   `<div id='imageContainer'>
-    <img id='picture' src="https://picsum.photos/300/300?random=1">
-    <p id='popuptext'><span>  </span></p>
-    </div>`
+ 
 
-}
 
-$container.addEventListener('click', function (event){
-    $picture.setAttribute('style', `background-color:red;`)
+ 
 
-   console.log(event)
-
-   $imageContainer.addEventListener('mouseover', function (event){
-    $imageContainer.children[2].setAttribute('style', `background-color:green;`) 
-    console.log(event)
-   }) 
-//     if (e.target.contains('pictures')){
-//  $imageContainer.innerHTML = 'hi'
-//     }
-   
-})
-
-// $imageContainer.addEventListener('dblclick', function (e){
-//     $imageContainer.children[1].textContent = ''
-//     console.log(e)
-// })
