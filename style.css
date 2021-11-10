@@ -66,7 +66,7 @@ h2{
 	margin-bottom:1rem;
 }
 
-#imageContainer, .picture{
+#container, .picture{
 justify-content: center;
 	margin-bottom:3rem;
 }
@@ -77,14 +77,14 @@ footer{
 }
 
 @media screen and (min-width:700px) {
-#imageContainer{
+#container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }	
 }
 
 @media screen and (min-width:1400px) {
-	#imageContainer{
+	#container{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}	
