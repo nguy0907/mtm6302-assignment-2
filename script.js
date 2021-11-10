@@ -50,13 +50,13 @@ const imageContainer = `<div id='imageContainer'>
  <img class='picture' src="https://picsum.photos/300/300?random=1">
  </div>`
 
-
+const selectimage = document.querySelectorAll('.picture')
 
 for (let picNumber = 0; picNumber < 12; picNumber++) {
   $container.insertAdjacentHTML('beforeend', imageContainer)
 }
 $container.addEventListener('click', function (event){
-    $container.children[0].setAttribute('style', `background-color:red;`)
+ $container.children[0].setAttribute('style', `background-color:red;`,event.target.children[0])
     
     console.log(event.target)
 })
