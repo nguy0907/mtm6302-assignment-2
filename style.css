@@ -70,8 +70,18 @@ header{
 	margin-bottom:5rem;
 }
 
-.effect{
+.click{
 	background-color:#D8E2DC;
+	 padding-top:3em;
+}
+
+.hoverin{
+	background-color:#979797c4;
+	 padding-top:3em;
+}
+
+.hoverout{
+	background-color:none;
 	 padding-top:3em;
 }
 

@@ -30,9 +30,8 @@ $container.addEventListener('click', function (e){
   const $imageContainer = e.target.closest('.imageContainer')
 
  if ($imageContainer) {
-  $imageContainer.classList.toggle('effect')
+  $imageContainer.classList.toggle('click')
 }
   console.log(e.target.parentElement.children[1])
  })
-
 
