@@ -35,6 +35,8 @@ $container.addEventListener('click', function (e){
   console.log(e.target.parentElement.children[1])
  })
 
+
+
  $container.addEventListener('mouseover', function (e){
   const $imageContainer = e.target.closest('.imageContainer')
 
@@ -44,6 +46,8 @@ $container.addEventListener('click', function (e){
   console.log(e.target.parentElement.children[1])
  })
 
+
+ 
  $container.addEventListener('mouseout', function (e){
   const $imageContainer = e.target.closest('.imageContainer')
 
