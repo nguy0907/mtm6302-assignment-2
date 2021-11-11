@@ -32,7 +32,7 @@ $container.addEventListener('click', function (e){
  if ($imageContainer) {
   $imageContainer.classList.toggle('click')
 }
-  console.log(e.target.parentElement.children[1])
+
  })
 
 
@@ -43,16 +43,13 @@ $container.addEventListener('click', function (e){
  if ($imageContainer) {
   $imageContainer.classList.toggle('hoverin')
 }
-  console.log(e.target.parentElement.children[1])
  })
 
-
- 
  $container.addEventListener('mouseout', function (e){
   const $imageContainer = e.target.closest('.imageContainer')
 
  if ($imageContainer) {
   $imageContainer.classList.toggle('hoverout')
 }
-  console.log(e.target.parentElement.children[1])
+
  })
