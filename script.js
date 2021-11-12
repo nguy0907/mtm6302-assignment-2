@@ -12,6 +12,8 @@ $name.textContent = 'Richard N'
 
 
 //Store all the image container
+
+//Placeholder images from https://dummyimage.com/
 $container.innerHTML = `
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
