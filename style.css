@@ -76,10 +76,11 @@ header{
 	padding-bottom:2em;
 }
 
+
+/* The click and hovers are used as a sign when interacting with the containers */
 .click{
 	padding-top:3em;
 background-color: rgb(168, 168, 168);
-
 }
 
 .hoverin{
@@ -91,6 +92,8 @@ background-color: rgb(168, 168, 168);
 border:none;	
  padding:none;
 }
+
+
 
 #container, .picture{
 justify-content: center;
@@ -106,6 +109,7 @@ footer{
 	padding-bottom:2em;
 }
 
+/* For medium screen, there is 2 columns */
 @media screen and (min-width:700px) {
 #container{
 	display: grid;
@@ -113,6 +117,7 @@ footer{
 }	
 }
 
+/* For the large screen, there is 4 columns */
 @media screen and (min-width:1400px) {
 	#container{
 		display: grid;
