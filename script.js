@@ -4,13 +4,14 @@ const $title = document.getElementById('title')
 const $name = document.getElementById('name')
 const $container = document.getElementById('container')
 
+//Adding text using text content
 $title.textContent = 'Image Gallery'
 $name.textContent = 'Richard N'
 
 
 
 
-
+//Store all the image container
 $container.innerHTML = `
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
