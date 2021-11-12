@@ -94,17 +94,12 @@ hovering out will make it disappear */
 
 .hoverout{
 border:none;	
- padding:none;
 }
-
-
 
 #container, .picture{
 justify-content: center;
 	margin-bottom:3rem;
 }
-
-
 
 footer{
 	background-color: rgb(5, 134, 255);

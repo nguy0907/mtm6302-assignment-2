@@ -9,8 +9,6 @@ $title.textContent = 'Image Gallery'
 $name.textContent = 'Richard N'
 
 
-
-
 //Store all the image container
 
 //Placeholder images from https://dummyimage.com/
@@ -28,10 +26,6 @@ $container.innerHTML = `
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
 <div class='imageContainer'> <img class='picture' src="https://dummyimage.com/300.png/09f/fff"></div>
 `
-
-
-
-
 
 // This is where event delegation is used
 $container.addEventListener('click', function (e){
