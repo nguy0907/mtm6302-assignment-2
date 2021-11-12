@@ -78,11 +78,15 @@ header{
 
 
 /* The click and hovers are used as a sign when interacting with the containers */
+
+/* Clicking the image containers will display a background around each containers */
 .click{
 	padding-top:3em;
 background-color: rgb(228, 228, 228);
 }
 
+/* When you hover the container there is a black border outline around the container
+hovering out will make it disappear */
 .hoverin{
 	border: 1px solid black;
 	padding-top:3em;
